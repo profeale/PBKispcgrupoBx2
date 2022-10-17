@@ -1,6 +1,12 @@
+
+a {
+    text-decoration: none;
+}
+
 .navbar__logo{
     width: 10rem;
 }
 .navbar{
     border-bottom: 1px solid #808080;
+    
 }
