@@ -1,0 +1,19 @@
+.sobre-nosotros{
+    display: flex;
+}
+.sobre-nosotros__izquierda{
+    width: 50vw;
+    margin: 10rem 5rem;
+}
+
+.sobre-nosotros__derecha{
+    width: 50vw;
+    margin: 0 5rem;
+}
+
+.sobre-nosotros__input{
+    padding: .25rem;
+    outline: none;
+    border: 1px solid #848484;
+    border-radius: 4px;
+}
