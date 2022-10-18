@@ -1,82 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style_login.css" />
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+        <title>Criptech | Iniciar sesión</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_login.css">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <title>Criptech</title>
-</head>
-
-<body>
-
-    <header>
-
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="navbar__logo" src="img/logo criptechV2.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
-                    aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarBasic">
-                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cotizacion.html">Cotizacion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cotizacion.html">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cuenta</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex">
-                        <form action="registro.html">
-                            <button class="mx-2 btn btn-outline-primary" type="submit">Registrarse</button>
-                        </form>
-                        <form action="login.html">
-                            <button class="btn btn-primary" type="submit">Iniciar sesión</button>
-                        </form>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img
+                            class="navbar__logo"
+                            src="img/logo criptechV2.png"
+                            alt=""
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarBasic"
+                        aria-controls="navbarBasic"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarBasic">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Nosotros</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    href="cotizacion.html"
+                                    >Cotizacion</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    href="cotizacion.html"
+                                    >FAQ</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    href="#"
+                                    tabindex="-1"
+                                    aria-disabled="true"
+                                    >Cuenta</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <form action="registro.html">
+                                <button
+                                    class="mx-2 btn btn-outline-primary"
+                                    type="submit"
+                                >
+                                    Registrarse
+                                </button>
+                            </form>
+                            <form action="login.html">
+                                <button class="btn btn-primary" type="submit">
+                                    Iniciar sesión
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
-    </header>
+        <main>
+            <h1 class="tituloLogin">Iniciar sesión</h1>
+            <form class="d-grid gap-2 col-6 mt-5 mx-auto" method="post">
+                <div class="form-floating mb-3">
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="nombre@ejemplo.com"
+                        required
+                    />
+                    <label for="floatingInput">Mail</label>
+                </div>
+                <div class="form-floating">
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="floatingPassword"
+                        placeholder="Contraseña"
+                        required
+                    />
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
 
-    <main>
-        
-        <form class="d-grid gap-2 col-6 mt-5 mx-auto" method="post">
-
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com" required>
-                <label for="floatingInput">Mail</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
-                <label for="floatingPassword">Contraseña</label>
-            </div>
-
-            <button type="button" class="btn btn-primary mx-auto mt-3 botonIniciarSesion" style="font-size: 25px;">Iniciar sesión</button>
-        </form>
-        
-    </main>
-
-</body>
-
+                <button
+                    type="button"
+                    class="btn btn-primary mx-auto mt-3 botonIniciarSesion"
+                    style="font-size: 25px"
+                >
+                    Iniciar sesión
+                </button>
+            </form>
+        </main>
+    </body>
 </html>

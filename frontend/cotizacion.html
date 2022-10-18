@@ -1,92 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style_cotizacion.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Criptech-Cotización</title>
-</head>
-<body>
-  <main>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img class="navbar__logo" src="img/logo criptechV2.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
-                aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarBasic">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cotizacion.html">Cotizacion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cuenta</a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <form action="registro.html">
-                        <button class="mx-2 btn btn-outline-primary" type="submit">Registrarse</button>
-                    </form>
-                    <form action="login.html">
-                        <button class="btn btn-primary" type="submit">Iniciar sesión</button>
-                    </form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style_cotizacion.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <title>Criptech | Cotización</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img
+                            class="navbar__logo"
+                            src="img/logo criptechV2.png"
+                            alt=""
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarBasic"
+                        aria-controls="navbarBasic"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarBasic">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Nosotros</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="cotizacion.html"
+                                    >Cotizacion</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="cotizacion.html"
+                                    >FAQ</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    href="#"
+                                    tabindex="-1"
+                                    aria-disabled="true"
+                                    >Cuenta</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <form action="registro.html">
+                                <button
+                                    class="mx-2 btn btn-outline-primary"
+                                    type="submit"
+                                >
+                                    Registrarse
+                                </button>
+                            </form>
+                            <form action="login.html">
+                                <button class="btn btn-primary" type="submit">
+                                    Iniciar sesión
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="page-title">Conversor de monedas</h1>
+                <h1>Cotizaciones de monedas extranjeras</h1>
+                <!--por ahora precio compra/venta fijo ¿tabla?-->
+                <ul>
+                    <li>Dolar 149,250/157,250</li>
+                    <li>Real 26,800/30,800</li>
+                    <li>Euro 143,500/151,500</li>
+                    <li>Bitcoin(u$d) 19.150,700</li>
+                </ul>
+
+                <!--por ahora de dolar a peso-->
+                <p class="page-subtitle">Descubra el valor en pesos $</p>
+                <label for="moneda">Ingrese el monto</label><br />
+                <input type="number" id="valor" size="2" /><br />
+                <!--convertir() viene del JS-->
+                <button type="submit" onclick="Convertir()">Convertir</button>
+                <h2 id="valorConvertido"></h2>
             </div>
-        </div>
-    </nav>
-
-<div class="container">
-    <h1 class="page-title">
-      Conversor de monedas
-    </h1> Cotizaciones de monedas extranjeras</h1>
-    <!--por ahora precio compra/venta fijo ¿tabla?-->
-<ul>
-<li>Dolar 149,250/157,250</li>
-<li>Real 26,800/30,800</li>
-<li>Euro 143,500/151,500</li>
-<li>Bitcoin(u$d) 19.150,700</li>
-</ul>
-
-
-    <!--por ahora de dolar a peso-->
-    <p class="page-subtitle">
-      Descubra el valor en pesos $
-    </p>
-    <img src="img/logo criptechV2.png" class="page-logo" alt=""><br><br>
-    <label for="moneda">Ingrese el monto</label><br>
-    <input type="number" id="valor" size="2" /><br>
-    <!--convertir() viene del JS-->
-    <button type="submit" onclick="Convertir()">Convertir</button>
-    <h2 id="valorConvertido"></h2>
-  </div>
-  <a href="index.html" target="_self">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="page-logo">
-        <!--Script Boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-            <footer>
-            
-            </footer>
         </main>
         <!--Script Boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"
+        ></script>
     </body>
-    
-    </html>
+</html>
