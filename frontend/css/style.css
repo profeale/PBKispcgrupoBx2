@@ -6,7 +6,13 @@ a {
 .navbar__logo{
     width: 10rem;
 }
+
 .navbar{
     border-bottom: 1px solid #808080;
     
+}
+
+.tituloLogin {
+    margin-top: 20px;
+    text-align: center;
 }
