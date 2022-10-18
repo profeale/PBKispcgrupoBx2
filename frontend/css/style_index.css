@@ -1,14 +1,20 @@
 .sobre-nosotros{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0rem 3rem;
 }
 .sobre-nosotros__izquierda{
-    width: 50vw;
-    margin: 10rem 5rem;
+    width: 50%;
 }
 
 .sobre-nosotros__derecha{
-    width: 50vw;
-    margin: 0 5rem;
+    width: 50%;
+}
+
+.sobre-nosotros__derecha > img {
+    width: 100%;
 }
 
 .sobre-nosotros__input{
@@ -16,4 +22,10 @@
     outline: none;
     border: 1px solid #848484;
     border-radius: 4px;
+}
+
+@media (max-width: 650px) {
+    .sobre-nosotros{
+        flex-direction: column;
+    }
 }
