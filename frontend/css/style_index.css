@@ -7,6 +7,9 @@
 }
 .sobre-nosotros__izquierda{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre-nosotros__derecha{
@@ -24,8 +27,15 @@
     border-radius: 4px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .sobre-nosotros{
         flex-direction: column;
+    }
+    .sobre-nosotros__izquierda{
+        width: 100%;
+    }
+    
+    .sobre-nosotros__derecha{
+        width: 100%;
     }
 }

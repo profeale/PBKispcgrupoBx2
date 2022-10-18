@@ -12,7 +12,13 @@ a {
     
 }
 
-.tituloLogin {
-    margin-top: 20px;
+.pie-de-pagina {
     text-align: center;
+    margin-top: 60px;
+}
+
+.copyright {
+    color: #0d0b0b;
+    font-size: 20px;
+    font-weight: bold;
 }
