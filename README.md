@@ -1,2 +1,3 @@
 # PBKispcgrupoBx2
 Grupo ispc DWAD segundo semestre del 1er año - 2022 Integrantes Fer Dani Cande Nico Mati, Andres, Vero, Fran, Cristian y Ale
+Profe! Intentamos de la forma que nos indicó para que el kanban se pueda ver desde el repo pero a pesar de estar linkeado no aparece entrando desde el repo (se ve en cada una de las issues). En la wiki dejamos las capturas de imágenes. Volveremos a intentar mientras tanto dejamos el link por acá como solicitó :) https://github.com/users/profeale/projects/3
