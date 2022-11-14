@@ -110,6 +110,8 @@
                         class="form-control"
                         id="nombreUsuario"
                         placeholder="Usuario"
+                        maxlength="15"
+                        minlength="6"
                         required
                     />
                     <label for="nombreUsuario">Nombre de usuario</label>
@@ -120,6 +122,8 @@
                         class="form-control"
                         id="nombre"
                         placeholder="Nombre"
+                        minlength="3"
+                        maxlength="25"
                         required
                     />
                     <label for="nombre">Nombre</label>
@@ -130,6 +134,8 @@
                         class="form-control"
                         id="apellido"
                         placeholder="Apellido"
+                        minlength="3"
+                        maxlength="25"
                         required
                     />
                     <label for="floatingInput">Apellido</label>
@@ -150,9 +156,21 @@
                         class="form-control"
                         id="dni"
                         placeholder="DNI"
+                        minlength="1000000"
+                        maxlength="99999999"
                         required
                     />
                     <label for="floatingInput">DNI/Cédula</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input
+                        type="date"
+                        class="form-control"
+                        id="nacimiento"
+                        placeholder="Fecha de Nacimiento"
+                        required
+                    />
+                    <label for="floatingInput">Fecha de Nacimiento</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input
