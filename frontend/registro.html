@@ -103,7 +103,7 @@
         </header>
         <main>
             <h1 class="tituloRegistro">Registrate</h1>
-            <form class="d-grid gap-2 col-6 mx-auto" method="post">
+            <form id="form" class="d-grid gap-2 col-6 mx-auto" method="post">
                 <div class="form-floating mb-3">
                     <input
                         type="text"
@@ -145,7 +145,7 @@
                         type="text"
                         class="form-control"
                         id="pais"
-                        placeholder="Pais de recidencia"
+                        placeholder="Pais de residencia"
                         required
                     />
                     <label for="floatingInput">Pais de residencia</label>
@@ -198,12 +198,28 @@
                         class="form-control"
                         id="floatingPassword"
                         placeholder="Contraseña"
+                        maxlength="16"
+                        minlength="8"
                         required
                     />
                     <label for="floatingPassword">Contraseña</label>
                 </div>
+                <div class="form-floating">
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="floatingPassword2"
+                        placeholder="Confirme su Contraseña"
+                        maxlength="16"
+                        minlength="8"
+                        required
+                    />
+                    <label for="floatingPassword">Confirme su Contraseña</label>
+                </div>
+                <br>
+                <br>
                 <button
-                    type="button"
+                    type="submit"
                     class="btn btn-primary"
                     style="font-size: 25px"
                 >
@@ -221,6 +237,8 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
-        ></script>
+            ></script>
+        <!-----Script js-->
+        <script src="js/validacion.js"></script>
     </body>
 </html>
