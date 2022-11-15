@@ -111,7 +111,7 @@
 
         <main>
             <h1 class="tituloLogin">Iniciar sesión</h1>
-            <form class="d-grid gap-2 col-6 mt-5 mx-auto" method="post">
+            <form id="myform" class="d-grid gap-2 col-6 mt-5 mx-auto" method="post" onsubmit="onEnviar()">
                 <div class="form-floating mb-3">
                     <input
                         type="email"
@@ -128,13 +128,15 @@
                         class="form-control"
                         id="floatingPassword"
                         placeholder="Contraseña"
+                        minlength="8"
+                        maxlength="16"
                         required
                     />
                     <label for="floatingPassword">Contraseña</label>
                 </div>
 
                 <button
-                    type="button"
+                    type="submit"
                     class="btn btn-primary mx-auto mt-3 botonIniciarSesion"
                     style="font-size: 25px"
                 >
@@ -146,5 +148,7 @@
             <img src="./img/img_footer.png" alt="ispc" title="Instituto Superior Politecnico de Córdoba" />
             <p class="copyright">&copy Copyright - 2022</p>
         </footer>
+
+        <script src="js/validacion.js"></script>
     </body>
 </html>
