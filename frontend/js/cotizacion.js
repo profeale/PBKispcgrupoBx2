@@ -6,6 +6,6 @@ function Convertir() {
     var valorEnPeso = valorEnDolarNumerico * 157.25;
     console.log(valorEnPeso);
     var elementoValorConvertido = document.getElementById("valorConvertido");
-    var valorConvertido = "El resultado en pesos del dolar venta es $" + valorEnPeso;
+    var valorConvertido = "Para comprar esa cantidad de dólares necesita la cantidad de $" + valorEnPeso;
     elementoValorConvertido.innerHTML = valorConvertido;
   }
