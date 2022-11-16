@@ -1,0 +1,74 @@
+import mysql.connector
+
+class Conectar():
+
+    def __init__(self) -> None:
+        try:
+            self.conexion = mysql.connector.connect(
+                host = 'localhost',
+                port = 3306,
+                user = 'root',
+                password = 'ContraseñaBBDD',
+                db = 'Criptech'
+
+            )
+        except mysql.connector.Error as descripcionError:
+            print("¡No se conectó!",descripcionError)
+
+#PRIMERA OPERACIÓN DEL CRUD: CREATE O INSERT.
+    def InsertarValor(self, nombre, dni, fechaNacimiento, cbu, banco, email, provincia):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL= "INSERT INTO tablaDeEjemplo VALUES(%s,%s,%s%s,%s,%s,%s)"
+                data= (nombre, dni, fechaNacimiento, cbu, banco, email, provincia)
+
+                cursor.execute(sentenciaSQL,data)
+                self.conexion.commit()
+                self.conexion.close()
+
+            except:
+                print("No se pudo conectar a la base de datos")
+   
+#SEGUNDA OPERACION DEL CRUD: READ O LEER
+    def BuscarObjeto(self, nombre):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL= "SELECT * from tablaDeEjemplo where nombre like '%MAR%' "
+                cursor.execute(sentenciaSQL)
+                resultadoREAD = cursor.fetchall()
+                self.conexion.close()
+                return resultadoREAD
+
+            except:
+                print("No se pudo conectar a la base de datos")
+
+
+#TERCERA OPERACIÓN DEL CRUD: UPDATE O ACTUALIZAR.
+    def ActualizarValor(self, cotizacion):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL= "UPDATE tabla_monedas VALUES(%s)"
+                data= (cotizacion)
+
+                cursor.execute(sentenciaSQL,data)
+                self.conexion.commit()
+                self.conexion.close()
+
+            except:
+                print("No se pudo conectar a la base de datos")
+
+#CUARTA OPERACION DEL CRUD: DELETE O ELIMINAR
+    def EliminarObjeto(self,provincia):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL = "DELETE from usuarios where id = provincia"
+                cursor.execute(sentenciaSQL)
+
+                self.conexion.commit()                
+                self.conexion.close()
+            except:
+                print("No se pudo conectar a la base de datos")
